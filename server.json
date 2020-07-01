@@ -25,20 +25,84 @@
       "available": true
     },
     {
-      "name": "Jabá",
+      "id": 4,
+      "name": "Jabá duBom",
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
       "price": "32.90",
       "description": "Rango mais brasileiro impossível",
-      "available": true,
-      "id": 4
+      "available": true
     },
     {
-      "name": "Jabá2",
+      "id": 5,
+      "name": "Jabá Sinistrão",
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
       "price": "21.90",
-      "description": "booooooommmmmm",
+      "description": "Aquele rango brasuca pra ninguém botar defeito!",
+      "available": true
+    },
+    {
+      "id": 6,
+      "name": "Macarrão Acarajé",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
+      "price": "32.90",
+      "description": "Comidinha baihana arretada! Saravá meu senhor do Bonfin",
+      "available": true
+    },
+    {
+      "name": "Vegano Fit",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
+      "price": "21.90",
+      "description": "Fique fit",
       "available": true,
-      "id": 5
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "Vegano Fit",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
+      "price": "22.90",
+      "description": "Fique fit com esse delicioso prato vegano",
+      "available": true
+    },
+    {
+      "name": "Mais um bonzão",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "price": "21.90",
+      "description": "arrependimento zero",
+      "available": true,
+      "id": 9
+    },
+    {
+      "name": "Mais um bonzão",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "price": "21.90",
+      "description": "arrependimento zero",
+      "available": true,
+      "id": 10
+    },
+    {
+      "name": "mais um",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "price": "21.21",
+      "description": "teste",
+      "available": true,
+      "id": 11
+    },
+    {
+      "name": "mais um",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "price": "21.21",
+      "description": "teste",
+      "available": true,
+      "id": 12
+    },
+    {
+      "name": "Agora va!",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "price": "12.89",
+      "description": "valeu?",
+      "available": true,
+      "id": 13
     }
   ]
 }

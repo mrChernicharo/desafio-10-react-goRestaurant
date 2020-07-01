@@ -1,8 +1,8 @@
 import React, { useRef, useCallback } from 'react';
-import api from '../../services/api';
 
 import { FiCheckSquare } from 'react-icons/fi';
 import { FormHandles } from '@unform/core';
+
 import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
@@ -26,7 +26,7 @@ interface ICreateFoodData {
 interface IModalProps {
   isOpen: boolean;
   setIsOpen: () => void;
-  handleAddFood: (food: IFoodPlate) => void;
+  handleAddFood: (food: Omit<IFoodPlate, 'id' | 'available'>) => void;
 }
 
 const ModalAddFood: React.FC<IModalProps> = ({
@@ -37,27 +37,9 @@ const ModalAddFood: React.FC<IModalProps> = ({
   const formRef = useRef<FormHandles>(null);
 
   const handleSubmit = useCallback(
-    async ({ name, image, price, description }: ICreateFoodData) => {
-      if (name && image && price && description) {
-        await api
-          .post('foods', {
-            name,
-            image,
-            price,
-            description,
-            available: true,
-          })
-          .then(response => {
-            const res: IFoodPlate = response.data;
-            console.log(res);
-            handleAddFood(res);
-            return res;
-          });
-
-        setIsOpen();
-      } else {
-        throw alert('preencha os campos!');
-      }
+    async (data: ICreateFoodData) => {
+      setIsOpen();
+      handleAddFood(data);
     },
     [handleAddFood, setIsOpen],
   );
