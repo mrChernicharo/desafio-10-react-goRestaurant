@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 import Header from '../../components/Header';
 
@@ -35,11 +35,12 @@ const Dashboard: React.FC = () => {
     loadFoods();
   }, []);
 
-  async function handleAddFood(
-    food: Omit<IFoodPlate, 'id' | 'available'>,
-  ): Promise<void> {
+  async function handleAddFood(food: IFoodPlate): Promise<void> {
     try {
       //TODO
+
+      // const addFood = Object.assign(food, { available: true });
+      setFoods([...foods, food]);
     } catch (err) {
       console.log(err);
     }

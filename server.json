@@ -18,11 +18,27 @@
     },
     {
       "id": 3,
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
       "name": "A la Camarón",
       "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
       "price": "25.90",
+      "available": true
+    },
+    {
+      "name": "Jabá",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "price": "32.90",
+      "description": "Rango mais brasileiro impossível",
       "available": true,
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+      "id": 4
+    },
+    {
+      "name": "Jabá2",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "price": "21.90",
+      "description": "booooooommmmmm",
+      "available": true,
+      "id": 5
     }
   ]
 }

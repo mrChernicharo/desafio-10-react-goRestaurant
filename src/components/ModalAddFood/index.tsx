@@ -26,7 +26,7 @@ interface ICreateFoodData {
 interface IModalProps {
   isOpen: boolean;
   setIsOpen: () => void;
-  handleAddFood: (food: Omit<IFoodPlate, 'id' | 'available'>) => void;
+  handleAddFood: (food: IFoodPlate) => void;
 }
 
 const ModalAddFood: React.FC<IModalProps> = ({
@@ -37,26 +37,33 @@ const ModalAddFood: React.FC<IModalProps> = ({
   const formRef = useRef<FormHandles>(null);
 
   const handleSubmit = useCallback(
-    async (data: ICreateFoodData) => {
-      const [name, image, price, description] = [
-        'pão',
-        'pao.url',
-        20.95,
-        'comida boa',
-      ];
+    async ({ name, image, price, description }: ICreateFoodData) => {
+      if (name && image && price && description) {
+        await api
+          .post('foods', {
+            name,
+            image,
+            price,
+            description,
+            available: true,
+          })
+          .then(response => {
+            const res: IFoodPlate = response.data;
+            console.log(res);
+            handleAddFood(res);
+            return res;
+          });
 
-      await api.post('foods', {
-        name,
-        image,
-        price,
-        description,
-      });
+        setIsOpen();
+      } else {
+        throw alert('preencha os campos!');
+      }
     },
     [handleAddFood, setIsOpen],
   );
 
   return (
-    <Modal isOpen={!isOpen} setIsOpen={setIsOpen}>
+    <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
       <Form ref={formRef} onSubmit={handleSubmit}>
         <h1>Novo Prato</h1>
         <Input name="image" placeholder="Cole o link aqui" />
