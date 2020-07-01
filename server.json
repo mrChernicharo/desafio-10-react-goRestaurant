@@ -49,60 +49,20 @@
       "available": true
     },
     {
-      "name": "Vegano Fit",
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
+      "name": "Rangão",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
       "price": "21.90",
-      "description": "Fique fit",
+      "description": "Esse é o bom!",
       "available": true,
       "id": 7
     },
     {
       "id": 8,
-      "name": "Vegano Fit",
+      "name": "vegano bão",
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
-      "price": "22.90",
-      "description": "Fique fit com esse delicioso prato vegano",
+      "price": "21.90",
+      "description": "bla bla blah, Vc quer alface e quinoa, pode falar, vamos!",
       "available": true
-    },
-    {
-      "name": "Mais um bonzão",
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
-      "price": "21.90",
-      "description": "arrependimento zero",
-      "available": true,
-      "id": 9
-    },
-    {
-      "name": "Mais um bonzão",
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
-      "price": "21.90",
-      "description": "arrependimento zero",
-      "available": true,
-      "id": 10
-    },
-    {
-      "name": "mais um",
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
-      "price": "21.21",
-      "description": "teste",
-      "available": true,
-      "id": 11
-    },
-    {
-      "name": "mais um",
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
-      "price": "21.21",
-      "description": "teste",
-      "available": true,
-      "id": 12
-    },
-    {
-      "name": "Agora va!",
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
-      "price": "12.89",
-      "description": "valeu?",
-      "available": true,
-      "id": 13
     }
   ]
 }
